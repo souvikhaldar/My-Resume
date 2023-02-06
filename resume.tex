@@ -1,0 +1,290 @@
+%-------------------------
+% Resume in Latex
+% Author : Souvik Haldar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{chater}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Souvik Haldar} \\ \vspace{3pt}
+    \small
+    \faGlobe \hspace{.5pt} \href{http://www.souvikhaldar.in}{Portfolio}
+    $|$
+    \faMobile \hspace{.5pt} \href{tel:918653149116}{+91 865 314 9116}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:souvikhaldar32@gmail.com}{souvikhaldar32@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/souvikhaldar/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/souvikhaldar}{GitHub}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Kolkata,+West+Bengal/@22.5354122,88.277313,12z/data=!3m1!4b1!4m5!3m4!1s0x39f882db4908f667:0x43e330e68f6c2cbc!8m2!3d22.572646!4d88.363895}{Kolkata, India}
+\end{center}
+
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      \small{\item{
+	\resumeItemListStart
+       		\resumeItem{\href{github.com/souvikhaldar/huntsman}{\color{blue}Huntsman: }{A versatile and highly concurrent malware written in golang.} \\ \vspace{3pt}} 
+       		\resumeItem{\href{github.com/souvikhaldar/goffer}{\color{blue}Goffer: }{Perform buffer overflow vuln testing and exploit} \\ \vspace{3pt}} 
+       		\resumeItem{\href{github.com/souvikhaldar/polyload}{\color{blue}Polyload: }{CLI tool to upload files to multiple cloud service provides simultaneously and easily.} \\ \vspace{3pt}} 
+       		\resumeItem{\href{github.com/souvikhaldar/go-ds}{\color{blue}go-ds: }{Library of all data-structures implemented in Golang.} \\ \vspace{3pt}} 
+       		\resumeItem{\href{https://github.com/souvikhaldar/loggator}{\color{blue}Loggator: }{A simple and extensible log aggregator service written in golang and mySQL.} \\ \vspace{3pt}} 
+	\resumeItemListEnd
+    }}
+    \resumeSubHeadingListEnd
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Imperva}{Bangaluru, India}
+      {Software Engineer}{Nov 2020 \textbf{--} Dec 2022}
+        \resumeItemListStart
+	    \resumeItem{Built a caching layer for configuration sync across services written in \textbf{Golang }that reduced latency by approx. 70\%.}
+	    \resumeItem{Created \textbf{microservices} for extracting features from HTTP API calls, summarizing the features to reduce payload size and contributed to other microservices in \textbf{Golang}.}
+	    \resumeItem{Wrote \textbf{Groovy} script to generate code coverage report of all Golang microservices as a freestyle job in \textbf{Jenkins}}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {Biostrap}{Kolkata, India}
+      {Backend Engineer}{May 2019 \textbf{--} Oct 2020}
+        \resumeItemListStart
+	    \resumeItem{Built several \textbf{HTTP }and \textbf{gRPC }APIs in Golang with MySQL DB.}
+            \resumeItem{Created CLI tool for DB migration, aggregating health metrics to generate monthy report, etc}
+        \resumeItemListEnd
+    \resumeSubheading
+      {Slurpalicious}{Kolkata, India}
+      {Backend Developer}{May 2019 \textbf{--} Oct 2020}
+        \resumeItemListStart
+	    \resumeItem{As a founding Backend Developer, created the the HTTP based web-server in Golang using gin-framework}
+            \resumeItem{Independently researched and built location-aware APIs using PostGIS, PostgreSQL and Golang.}
+            \resumeItem{Developed several other APIs and implemented oAuth authentication mechanism.}
+        \resumeItemListEnd
+    \resumeSubheading
+      {Hasura}{Kolkata, India}
+      {Product Development Intern}{May 2017 \textbf{--} Aug 2017}
+        \resumeItemListStart
+	    \resumeItem{Produced a web app named Hisab-Kitab, a personal expense management app using HTML, CSS, Javascript, Flask (python)and Hasura IAAS APIs.}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Digital Ocean Hackathon: }{ Ranked $2^{nd}$ in Digital Ocean CloudHack hackathon across India} \\ \vspace{3pt}
+        
+        \textbf{Modern Application Development MOOC: }{All India Rank in top 2 percentile in the MOOC organized by MHRD Govt of India and NPTEL, as a reward got selected for internship at Hasura.} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Programming:}{ Golang, Solidity, Python } \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{ Linux, Ethereum, Git, Docker, Kubernetes, Penetration Testing, Web APIs, Prometheus, Grafana, gRPC, Vim, AWS} \\ \vspace{3pt}
+        
+        \textbf{Languages:}{ English, Hindi, Bengali }
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- CERTIFICATES -----------
+
+\section{Certificates}
+  \resumeSubHeadingListStart
+	\small{\item{
+        \textbf{Advanced Certification Program in Cyber Security and Cyber Defense: }{Reverse Engineering, Honeypot, Malware analysis, Web Security, Vulnerability Assessment and Penetration Testing,Intrusion Detection System, etc.} \\ \vspace{3pt}
+        
+        \textbf{CodeChef Certified Data Structures and Algorithms Programme: }{Data Structures and algorithms, competitive programming, problem solving skills, etc. }
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    %\resumeEducationHeading
+    \resumeSubheading
+      {Techno Main Salt Lake
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Kolkata, India}
+      {B.Tech in Computer Science and Engineering;   \textbf{GPA: 7.35/10.00}}{Aug 2014 \textbf{--} July 2018}
+    
+    %\resumeSubheading
+    \resumeEducationHeading
+      {Kendriya Vidyalaya 
+      }{Adra, West Bengal, India}
+      {AISSCE Science;   \textbf{Percentage: 80.02}}{April 2011 \textbf{--} May 2013}
+      {CCE ;   \textbf{CGPA: 9.6/10.0}}{April 2001 \textbf{--} March 2011}
+    
+  \resumeSubHeadingListEnd
+
+%----------- RELEVANT COURSEWORK -----------
+
+\section{References}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Sandeep Shukla, HOD CSE Indian Institute of Technology, Kanpur:}{ Souvik is a bright young man with great skills in programming, and the ability to translate concepts into code really fast. In particular, he is a great go language programmer. He developed a very nice tool which he named Huntsman, a Swiss armyknife for offensive security and penetration testing which I was very impressed with. He is very aspirational and willing to dedicate his time to learning and creating technology which is a great asset among his other qualities. I believe he will reach great heights in technology entrepreneurship in the future.} \\ \vspace{3pt}
+       \textbf{Babji Perambattu, Engineering Manager, Imperva: }{I hired Souvik for my team in CloudVector which was later acquired by Imperva. Souvik worked directly with me for more than 2 years and I found him to be a good Golang programmer. Souvik has contributed in integrating CloudVector API Security product with Imperva's CWAF for a successful launch. He has keen interest in system design, cybersecurity research, writing technical blogs in addition to programming.} 
+    }}
+  \resumeSubHeadingListEnd
+
+  \section{Publication}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+	\small{\item{
+			\textbf{Implementing Enterprise Cybersecurity with Opensource Software and Standard Architecture, River Publishers: }{Authored a chapter on the offensive use of \textbf{Huntsman}, the multipurpose malware that I've developed for the research purpose.}
+		}}
+  \resumeSubHeadingListEnd
+
+\end{document}
